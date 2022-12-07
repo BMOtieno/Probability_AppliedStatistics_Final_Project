@@ -7,10 +7,13 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 
 public class SmoothData {
-
+    /**
+     * A program that imports Apache libraries to smooth a salted graph
+     * @author Brian Odhiambo
+     *
+     * */
     final static Subtract subtract = new Subtract();
     final static Add add = new Add();
-
     // Smoother
     public static void smoothTheGraph() {
         try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("ApacheSmoothedGraph.csv"))){
@@ -46,7 +49,6 @@ public class SmoothData {
             System.out.println("The program ran successfully");
         }
     }
-
     public static void main(String[] args) {
         smoothTheGraph();
     }

@@ -34,7 +34,6 @@ public class PlotData {
         ChartUtils.writeChartAsPNG(outputStream, jFreeChart, 700, 500);
         System.out.println("Successfully published the output！");
     }
-
     public static void main(String[] args) throws IOException {
         plotLineGraph();
     }
