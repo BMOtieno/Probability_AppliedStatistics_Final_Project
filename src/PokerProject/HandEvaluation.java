@@ -14,7 +14,7 @@ public class HandEvaluation {
         System.out.println("Player one's cards: " + PlayerOne);
         System.out.println("Player two's cars: " + PlayerTwo);
     }
-
+    //method that allows to remove up to 5 cards from the hand
     public static String removeCardsFromHand(){
         //Every time this method will be called a card will be removed
         List<String> getRidOfOneCard = Deck.drawFive();
@@ -25,7 +25,7 @@ public class HandEvaluation {
         }
         return cards.pop();
     }
-
+    //method that fills the hand with 5 cards
     public static List<String> refillHandWithCards(){
         List<String> calledCards = Deck.drawFive();
         List<String> refilledCards  = new ArrayList<>();

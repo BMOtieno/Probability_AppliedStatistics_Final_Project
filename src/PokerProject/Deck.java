@@ -40,6 +40,7 @@ public class Deck {
             shuffledCards.add(addedCard);
         }
     }
+    //method to evaluate the 5 drawn cards
     public static void evaluateDrawnCards() {
         checkForFlush();
         checkForAPair();
@@ -65,7 +66,6 @@ public class Deck {
         }
     }
     public static void checkForFlush(){
-
         int flush = 0;
 
         List<String> cards = drawFive();
@@ -87,7 +87,6 @@ public class Deck {
     }
     public static void checkForAPair() {
         int pair = 0;
-
         //The random drawn cards are the user's current cards at hand
         List<String> cardsAtHand = drawFive();
         System.out.println(cardsAtHand);
@@ -121,7 +120,9 @@ public class Deck {
                             fiveOfAKind++;
                             break;
                         default:
-                            System.out.println("No match present in the deck");
+                            System.out.println("\n=============================");
+                            System.out.println("No winner this round");
+                            System.out.println("================================");
                     }
                 }
             }
